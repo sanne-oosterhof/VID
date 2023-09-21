@@ -47,7 +47,7 @@ h1{
 
 header {
     position: relative;
-    background-image: url('/images/achtergrond_image.jpg'); 
+    background-image: url('./images/achtergrond_image.jpg'); 
     background-size: cover;
     background-position: center;
     height: 100vh;
