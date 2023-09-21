@@ -26,25 +26,24 @@ button, summary {
 
 /* @media (prefers-color-scheme: dark){
 	:root{
-        --color-text:#eee;
-        --color-text-light:#151515;
-        --color-background-dark: #eee;
-        --color-background:#151515;
-        --color-background-hero: rgba(0, 0, 0, 0.5); 
+        hier de kleuren
 	}
 }
  */
 
 
 
-/*************/
-/*  STYLING  */
-/*************/
+
+
+/**********************/
+/*  ALGEMENE STYLING  */
+/**********************/
 body{
     margin: 0;
     padding: 0;
 }
 
+/* Voor de hero  */
 header {
     position: relative;
     background-image: url('../images/achtergrond_image.jpg'); 
@@ -82,18 +81,15 @@ h1{
     color: var(--color-text-light);
 }
 
+
+
+
+
+/***************/
 /* Main styles */
-main{
-    margin: 1em;
-}
+/***************/
 
-
-section:nth-of-type(1){
-    display: flex;
-    flex-direction: column;
-    padding: 0 1em 0 1em;
-}
-
+/* De grote a in de eerste sectie  */
 h2{
     font-family: "lithos-pro", sans-serif;
     font-weight: 700;
@@ -102,12 +98,13 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 90%;
+    line-height: 100%;
     font-size: 20em;
     margin: 0;
     padding: 0;
 }
 
+/* Titel van de eerste sectie  */
 h3{
     font-family: "lithos-pro", sans-serif;
     font-weight: 700;
@@ -119,7 +116,36 @@ h3{
 }
 
 
+/* eerste sectie  */
+section:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em 0 1em; 
+}
+
+/* tweede sectie  */
+.fox{
+    font-size: min(3.4vw, 20em);
+}
+
+/* derde sectie  */
+section:nth-of-type(3){
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em 0 1em; 
+}
+
+section:nth-of-type(3) img{
+    width: 100%;
+}
+
+
+
+
+
+/*****************/
 /* Footer styles */
+/*****************/
 footer {
     text-align: center;
     background-color: var(--color-background-dark); 
@@ -134,34 +160,56 @@ footer p {
 
 
 
+
+
+/****************/
+/*  Responsive  */
+/****************/
 @media (min-width: 45em){
     header {
         height: 100vh;
     }
 
-    /* main styles  */
-    section{
-        display: flex;
-        justify-content: center;
-        margin: 1em;
-        width: 80vw;
-    }
-
-    section:nth-of-type(1){
-        display: flex;
-        flex-direction: row;
-    }
-
-    section div:nth-of-type(2){
-        margin-left: 2em;
-        max-width: 34em;
-    }
-
+    /* Grote a in de eerste sectie  */
     h2{
         padding: .1em;
         font-size: min(30vw, 20em);
     }
+
+    /* eerste sectie  */
+    section:nth-of-type(1){
+        display: flex;
+        justify-content: center;
+        margin: 2em 1em 2em 1em;
+        flex-direction: row;
+    }
+
+    /* tweede sectie  */
+    section div:nth-of-type(2){
+        margin-left: 2em;
+        max-width: 34em;
+    }
+   
+    .fox{
+        font-size: 3.7vw;
+    }
+
+    /* derde sectie  */
+    section:nth-of-type(3){
+        display: flex;
+        justify-content: center;
+        margin: 4em 1em 1em 1em;
+        flex-direction: row;
+    }
+
+    section:nth-of-type(3) img{
+        width: 45vw;
+    }
+
 }
+
+
+
 
 
 /****************/
