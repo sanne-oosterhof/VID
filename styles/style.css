@@ -251,32 +251,55 @@ section:nth-of-type(6){
 h5{
     display: flex;
     justify-content: center;
+    font-family: "lithos-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 0%;
 }
 
 /* zesde sectie met alfabet */
 h5:nth-of-type(1){
-    font-family: "lithos-pro", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 5vw;
-    line-height: 0%;
+    font-size: 4.8vw;
 }
 
 h5:nth-of-type(2){
-    font-family: "lithos-pro", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 5vw;
-    line-height: 0%;
+    font-size: 4.8vw;
 }
 
 h5:nth-of-type(3){
-    font-family: "lithos-pro", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 5vw;
-    line-height: 0%;
+    font-size: 4.8vw;
 }
+
+h5:nth-of-type(4){
+    font-size: 4.8vw;
+}
+
+
+
+/* zevende sectie  */
+section:nth-of-type(7){
+    display: flex;
+    justify-content: center;
+    padding: 2em 1em 0 1em; 
+}
+
+section:nth-of-type(7) p{
+    max-width: 53em;
+}
+
+
+
+/* achtste sectie  */
+section:nth-of-type(8){
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1em 0 1em; 
+}
+
+section:nth-of-type(8) div img{
+    width: 60%;
+}
+
 
 
 /*****************/
@@ -309,7 +332,7 @@ footer p {
         animation-timing-function:cubic-bezier(0.165, 0.840, 0.440, 1.000);
         }
         50% {
-        transform:translatey(-1.8em);
+        transform:translatey(-1.5em);
         animation-timing-function:cubic-bezier(0.895, 0.030, 0.685, 0.220);
         }
         100% {
@@ -424,7 +447,7 @@ footer p {
 
 
 
-    /* 5 Lorem ipsum zinnetjes vierde sectie  */
+    /* 5 eigen tekst zinnetjes vierde sectie  */
     h4:nth-of-type(1){
         font-size: 4.4vw;
     }
@@ -443,6 +466,43 @@ footer p {
 
     h4:nth-of-type(5){
         font-size: 4.4vw;
+    }
+
+
+    /* zesde sectie met alfabet */
+    h5:nth-of-type(1){
+        font-size: 3vw;
+    }
+
+    h5:nth-of-type(2){
+        font-size: 3vw;
+    }
+
+    h5:nth-of-type(3){
+        font-size: 3vw;
+    }
+
+    h5:nth-of-type(4){
+        font-size: 3vw;
+    }
+
+    /* achtste sectie  */
+    section:nth-of-type(8){
+        display: flex;
+        justify-content: center;
+        margin: 4em 1em 7em 1em;
+        flex-direction: row;
+    }
+
+    section:nth-of-type(8) div:nth-of-type(1){
+        max-width: 31em;
+        margin-right: 1em;
+    }
+
+    section:nth-of-type(8) div img{
+        width: 35vw;
+        max-width: 20em;
+        margin-left: 1em;
     }
 
 }
