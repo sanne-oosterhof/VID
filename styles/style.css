@@ -27,16 +27,18 @@ button, summary {
 
 
 
-
 /**********************/
 /*  ALGEMENE STYLING  */
 /**********************/
 body{
     margin: 0;
     padding: 0;
-    font-family:'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times;
     font-size: 1em;
 }
+
+/* Gekozen voor Georgia als bodytekst, omdat het scherpe, goed gedefinieerde serifs heeft die goed contrasteren met de vormen van Lithos Pro. */
+/* Arvo gekozen als fallback font voor lithos pro, omdat het een een modern schreefloos (sans-serif) lettertype is met een strakke en rechthoekige vormgeving. */
 
 /* Voor de hero  */
 header {
@@ -70,7 +72,7 @@ h1{
     z-index: 1;
     font-size: 12vw;
     margin: 1em;
-    font-family: "lithos-pro", sans-serif;
+    font-family: "lithos-pro", 'Arvo', sans-serif;
     font-weight: 700;
     font-style: normal;
     color: var(--color-text-light);
@@ -85,7 +87,7 @@ h1{
 /***************/
  /* artikel - inleiding  */
  article{
-    font-family: "lithos-pro", sans-serif;
+    font-family: "lithos-pro", 'Arvo', sans-serif;
     font-weight: 400;
     font-style: normal;
     display: flex;
@@ -101,7 +103,7 @@ article div{
 
 /* De grote a in de eerste sectie  */
 h2{
-    font-family: "lithos-pro", sans-serif;
+    font-family: "lithos-pro", 'Arvo', sans-serif;
     font-weight: 700;
     font-style: normal;
 
@@ -118,7 +120,7 @@ h2{
 
 /* Titel van de eerste sectie  */
 h3{
-    font-family: "lithos-pro", sans-serif;
+    font-family: "lithos-pro", 'Arvo', sans-serif;
     font-weight: 700;
     font-style: normal;
 
@@ -158,7 +160,7 @@ span:nth-of-type(5){
 section:nth-of-type(3){
     display: flex;
     flex-direction: column;
-    padding: 2em 1em 0 1em; 
+    margin: 2.5em 1em 2em 1em;
 }
 
 section:nth-of-type(3) img{
@@ -180,49 +182,40 @@ section:nth-of-type(4) div{
     align-items: center;
 }
 
+h4{
+    font-family: "lithos-pro", 'Arvo', sans-serif; 
+    font-style: normal;
+    line-height: 0%;
+}
+
 /* 5 zelf typen zinnetjes vierde sectie  */
 h4:nth-of-type(1){
-    font-family: "lithos-pro", sans-serif;
     font-weight: 900;
-    font-style: normal;
-    font-size: 6.5vw;
-    line-height: 0%;
+    font-size: 6.5vw; 
     margin: 1.2em 0 .8em 0;
 }
 
 h4:nth-of-type(2){
-    font-family: "lithos-pro", sans-serif;
     font-weight: 700;
-    font-style: normal;
     font-size: 6.5vw;
-    line-height: 0%;
     margin: .8em 0 .8em 0;
 }
 
 h4:nth-of-type(3){
-    font-family: "lithos-pro", sans-serif;
     font-weight: 400;
-    font-style: normal;
     font-size: 6.5vw;
-    line-height: 0%;
     margin: .8em 0 .8em 0;
 }
 
 h4:nth-of-type(4){
-    font-family: "lithos-pro", sans-serif;
     font-weight: 300;
-    font-style: normal;
     font-size: 6.5vw;
-    line-height: 0%;
     margin: .8em 0 .8em 0;
 }
 
 h4:nth-of-type(5){
-    font-family: "lithos-pro", sans-serif;
     font-weight: 200;
-    font-style: normal;
     font-size: 6.5vw;
-    line-height: 0%;
     margin: .8em 0 0 0;
 }
 
@@ -232,7 +225,8 @@ h4:nth-of-type(5){
 section:nth-of-type(5){
     display: flex;
     justify-content: center;
-    padding: 2em 1em 0 1em; 
+    margin: 1em;
+
 }
 
 section:nth-of-type(5) p{
@@ -251,7 +245,7 @@ section:nth-of-type(6){
 h5{
     display: flex;
     justify-content: center;
-    font-family: "lithos-pro", sans-serif;
+    font-family: "lithos-pro", 'Arvo', sans-serif;
     font-weight: 700;
     font-style: normal;
     line-height: 0%;
@@ -280,7 +274,7 @@ h5:nth-of-type(4){
 section:nth-of-type(7){
     display: flex;
     justify-content: center;
-    padding: 2em 1em 0 1em; 
+    margin: 1em;
 }
 
 section:nth-of-type(7) p{
@@ -293,7 +287,7 @@ section:nth-of-type(7) p{
 section:nth-of-type(8){
     display: flex;
     flex-direction: column;
-    padding: 2em 1em 0 1em; 
+    margin: 4em 1em 7em 1em;
 }
 
 section:nth-of-type(8) div img{
@@ -355,7 +349,7 @@ footer p {
 
     /* inleidend stukje tekst  */
     article{
-        font-family: "lithos-pro", sans-serif;
+        font-family: "lithos-pro", 'Arvo', sans-serif;
         font-weight: 700;
         font-style: normal;
     }
@@ -392,6 +386,10 @@ footer p {
     .fox{
         font-size: 3.7vw;
     }
+
+
+
+
 
     /******************/
     /* animatie jumps */
@@ -432,7 +430,7 @@ footer p {
     section:nth-of-type(3){
         display: flex;
         justify-content: center;
-        margin: 5em 1em 1em 1em;
+        margin: 7em 1em 4em 1em;
         flex-direction: row;
     }
 
@@ -447,7 +445,7 @@ footer p {
 
 
 
-    /* 5 eigen tekst zinnetjes vierde sectie  */
+    /* vierde sectie 5 eigen tekst zinnetjes  */
     h4:nth-of-type(1){
         font-size: 4.4vw;
     }
@@ -469,6 +467,14 @@ footer p {
     }
 
 
+
+    /* vijfde sectie  */
+    section:nth-of-type(5){
+        margin: 2em 1em 4em 1em;
+    }
+
+
+
     /* zesde sectie met alfabet */
     h5:nth-of-type(1){
         font-size: 3vw;
@@ -486,11 +492,19 @@ footer p {
         font-size: 3vw;
     }
 
+
+
+     /* zevende sectie  */
+     section:nth-of-type(7){
+        margin: 0 1em 6em 1em;
+    }
+
+
+
     /* achtste sectie  */
     section:nth-of-type(8){
         display: flex;
         justify-content: center;
-        margin: 4em 1em 7em 1em;
         flex-direction: row;
     }
 
@@ -504,11 +518,12 @@ footer p {
         max-width: 20em;
         margin-left: 1em;
     }
-
 }
 
 
 
+
+/* Informatie voor de diktes van het font  */
 /****************/
 /* LITHOS FONT  */
 /****************/
