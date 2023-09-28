@@ -97,6 +97,8 @@ article div{
     max-width: 50em;
 }
 
+
+
 /* De grote a in de eerste sectie  */
 h2{
     font-family: "lithos-pro", sans-serif;
@@ -112,6 +114,8 @@ h2{
     padding: 0;
 }
 
+
+
 /* Titel van de eerste sectie  */
 h3{
     font-family: "lithos-pro", sans-serif;
@@ -124,6 +128,7 @@ h3{
 }
 
 
+
 /* eerste sectie  */
 section:nth-of-type(1){
     display: flex;
@@ -131,10 +136,23 @@ section:nth-of-type(1){
     padding: 0 1em 2em 1em; 
 }
 
+
+
 /* tweede sectie  */
 .fox{
     font-size: min(3.4vw, 20em);
 }
+
+/* Ruimte om het woord jumps */
+span:nth-of-type(1){
+    margin-left: 1vw;
+}
+
+span:nth-of-type(5){
+    margin-right: 1vw;
+}
+
+
 
 /* derde sectie  */
 section:nth-of-type(3){
@@ -147,56 +165,118 @@ section:nth-of-type(3) img{
     width: 100%;
 }
 
+
+
 /* vierde sectie  */
 section:nth-of-type(4){
     display: flex;
     justify-content: center;
-    padding: 1em 1em 2em 1em; 
+    padding: 0 1em 2em 1em; 
 }
 
+section:nth-of-type(4) div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/* 5 Lorem ipsum zinnetjes vierde sectie  */
+/* 5 zelf typen zinnetjes vierde sectie  */
 h4:nth-of-type(1){
     font-family: "lithos-pro", sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 7vw;
+    font-size: 6.5vw;
     line-height: 0%;
+    margin: 1.2em 0 .8em 0;
 }
 
 h4:nth-of-type(2){
     font-family: "lithos-pro", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 7vw;
+    font-size: 6.5vw;
     line-height: 0%;
+    margin: .8em 0 .8em 0;
 }
 
 h4:nth-of-type(3){
     font-family: "lithos-pro", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 7vw;
+    font-size: 6.5vw;
     line-height: 0%;
+    margin: .8em 0 .8em 0;
 }
 
 h4:nth-of-type(4){
     font-family: "lithos-pro", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 7vw;
+    font-size: 6.5vw;
     line-height: 0%;
+    margin: .8em 0 .8em 0;
 }
 
 h4:nth-of-type(5){
     font-family: "lithos-pro", sans-serif;
     font-weight: 200;
     font-style: normal;
-    font-size: 7vw;
+    font-size: 6.5vw;
     line-height: 0%;
+    margin: .8em 0 0 0;
 }
 
 
+
+/* vijfde sectie  */
+section:nth-of-type(5){
+    display: flex;
+    justify-content: center;
+    padding: 2em 1em 0 1em; 
+}
+
+section:nth-of-type(5) p{
+    max-width: 53em;
+}
+
+
+
+/* zesde sectie  */
+section:nth-of-type(6){
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+h5{
+    display: flex;
+    justify-content: center;
+}
+
+/* zesde sectie met alfabet */
+h5:nth-of-type(1){
+    font-family: "lithos-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5vw;
+    line-height: 0%;
+}
+
+h5:nth-of-type(2){
+    font-family: "lithos-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5vw;
+    line-height: 0%;
+}
+
+h5:nth-of-type(3){
+    font-family: "lithos-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5vw;
+    line-height: 0%;
+}
 
 
 /*****************/
@@ -212,6 +292,30 @@ footer {
 footer p {
     margin: 0;
     font-size: 14px;
+}
+
+
+
+
+
+/****************/
+/*   Animatie   */
+/****************/
+/* Animatie alleen afspelen bij geen voorkeur  */
+@media (prefers-reduced-motion: no-preference){
+    @keyframes tripleJump-animation {
+        0% {
+        transform:translatey(0);
+        animation-timing-function:cubic-bezier(0.165, 0.840, 0.440, 1.000);
+        }
+        50% {
+        transform:translatey(-1.8em);
+        animation-timing-function:cubic-bezier(0.895, 0.030, 0.685, 0.220);
+        }
+        100% {
+        transform:translatey(0);
+        }
+    }
 }
 
 
@@ -250,7 +354,13 @@ footer p {
         margin-left: 2em;
     }
 
+
+
     /* tweede sectie  */
+    section:nth-of-type(2){
+        padding-top: 2em;
+    }
+
     section div:nth-of-type(2){
         max-width: 34em;
         margin: 0;
@@ -259,6 +369,41 @@ footer p {
     .fox{
         font-size: 3.7vw;
     }
+
+    /******************/
+    /* animatie jumps */
+    /******************/
+    section.jump div h2.fox span{
+        animation-name:tripleJump-animation;
+        animation-iteration-count:infinite;
+    }
+    
+    section.jump div h2.fox span:nth-of-type(1) {
+        animation-delay:0s;
+        animation-duration:1.5s;
+    }
+    
+    section.jump div h2.fox span:nth-of-type(2) {
+        animation-delay:.33s;
+        animation-duration:1.43s;
+    }
+    
+    section.jump div h2.fox span:nth-of-type(3) {
+        animation-delay:.67s;
+        animation-duration:1.57s;
+    }
+
+    section.jump div h2.fox span:nth-of-type(4) {
+        animation-delay: 1s;
+        animation-duration: 1.43s;
+    }
+
+    section.jump div h2.fox span:nth-of-type(5) {
+        animation-delay: 1.33s;
+        animation-duration:1.07s;
+    }
+
+
 
     /* derde sectie  */
     section:nth-of-type(3){
@@ -277,30 +422,30 @@ footer p {
         margin-left: 1em;
     }
 
+
+
     /* 5 Lorem ipsum zinnetjes vierde sectie  */
-h4:nth-of-type(1){
-    font-size: 4.4vw;
+    h4:nth-of-type(1){
+        font-size: 4.4vw;
+    }
+
+    h4:nth-of-type(2){
+        font-size: 4.4vw;
+    }
+
+    h4:nth-of-type(3){
+        font-size: 4.4vw;
+    }
+
+    h4:nth-of-type(4){
+        font-size: 4.4vw;
+    }
+
+    h4:nth-of-type(5){
+        font-size: 4.4vw;
+    }
+
 }
-
-h4:nth-of-type(2){
-    font-size: 4.4vw;
-}
-
-h4:nth-of-type(3){
-    font-size: 4.4vw;
-}
-
-h4:nth-of-type(4){
-    font-size: 4.4vw;
-}
-
-h4:nth-of-type(5){
-    font-size: 4.4vw;
-}
-
-}
-
-
 
 
 
