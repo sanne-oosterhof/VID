@@ -37,8 +37,11 @@ body{
     font-size: 1em;
 }
 
-/* Gekozen voor Georgia als bodytekst, omdat het scherpe, goed gedefinieerde serifs heeft die goed contrasteren met de vormen van Lithos Pro. */
+/* Gekozen voor Georgia als bodytekst, omdat het scherpe, goed gedefinieerde serifs heeft die goed contrasteren met de vormen van Lithos Pro. 
+    Times New Roman als fallback font past daar ook goed bij, mocht Georgia niet werken */
 /* Arvo gekozen als fallback font voor lithos pro, omdat het een een modern schreefloos (sans-serif) lettertype is met een strakke en rechthoekige vormgeving. */
+
+
 
 /* Voor de hero  */
 header {
@@ -85,7 +88,7 @@ h1{
 /***************/
 /* Main styles */
 /***************/
- /* artikel - inleiding  */
+ /* article - inleiding  */
  article{
     font-family: "lithos-pro", 'Arvo', sans-serif;
     font-weight: 400;
@@ -152,6 +155,39 @@ span:nth-of-type(1){
 
 span:nth-of-type(5){
     margin-right: 1vw;
+}
+
+ /******************/
+/* animatie jumps */
+/******************/
+section.jump div h2.fox span{
+    animation-name:tripleJump-animation;
+    animation-iteration-count:infinite;
+}
+
+section.jump div h2.fox span:nth-of-type(1) {
+    animation-delay:0s;
+    animation-duration:1.5s;
+}
+
+section.jump div h2.fox span:nth-of-type(2) {
+    animation-delay:.33s;
+    animation-duration:1.43s;
+}
+
+section.jump div h2.fox span:nth-of-type(3) {
+    animation-delay:.67s;
+    animation-duration:1.57s;
+}
+
+section.jump div h2.fox span:nth-of-type(4) {
+    animation-delay: 1s;
+    animation-duration: 1.43s;
+}
+
+section.jump div h2.fox span:nth-of-type(5) {
+    animation-delay: 1.33s;
+    animation-duration:1.07s;
 }
 
 
@@ -250,6 +286,8 @@ h5{
     font-style: normal;
     line-height: 0%;
 }
+
+
 
 /* zesde sectie met alfabet */
 h5:nth-of-type(1){
@@ -386,44 +424,7 @@ footer p {
     .fox{
         font-size: 3.7vw;
     }
-
-
-
-
-
-    /******************/
-    /* animatie jumps */
-    /******************/
-    section.jump div h2.fox span{
-        animation-name:tripleJump-animation;
-        animation-iteration-count:infinite;
-    }
     
-    section.jump div h2.fox span:nth-of-type(1) {
-        animation-delay:0s;
-        animation-duration:1.5s;
-    }
-    
-    section.jump div h2.fox span:nth-of-type(2) {
-        animation-delay:.33s;
-        animation-duration:1.43s;
-    }
-    
-    section.jump div h2.fox span:nth-of-type(3) {
-        animation-delay:.67s;
-        animation-duration:1.57s;
-    }
-
-    section.jump div h2.fox span:nth-of-type(4) {
-        animation-delay: 1s;
-        animation-duration: 1.43s;
-    }
-
-    section.jump div h2.fox span:nth-of-type(5) {
-        animation-delay: 1.33s;
-        animation-duration:1.07s;
-    }
-
 
 
     /* derde sectie  */
@@ -475,7 +476,7 @@ footer p {
 
 
 
-    /* zesde sectie met alfabet */
+    /* zesde sectie met alfabet, allemaal los van elkaar. Mocht er 1 groter of kleiner moeten worden. */
     h5:nth-of-type(1){
         font-size: 3vw;
     }
@@ -523,7 +524,7 @@ footer p {
 
 
 
-/* Informatie voor de diktes van het font  */
+/* Verschillende varianten van het font  */
 /****************/
 /* LITHOS FONT  */
 /****************/
