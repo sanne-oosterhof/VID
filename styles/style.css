@@ -93,7 +93,7 @@ h1{
 /* Main styles */
 /***************/
  /* article - inleiding  */
- article{
+ article:nth-of-type(1){
     font-family: "lithos-pro", 'Arvo', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -102,7 +102,7 @@ h1{
     padding: 3em 1em 2em 1em; 
 }
 
-article div{
+article:nth-of-type(1) div{
     max-width: 50em;
 }
 
@@ -261,6 +261,7 @@ h4:nth-of-type(5){
 
 
 
+
 /* vijfde sectie  */
 section:nth-of-type(5){
     display: flex;
@@ -272,6 +273,24 @@ section:nth-of-type(5){
 section:nth-of-type(5) p{
     max-width: 53em;
 }
+
+
+
+
+/* EXTRA STUKJE OVER ONTWERPSTER */
+
+article:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em 2em 1em; 
+}
+
+
+article:nth-of-type(2) img{
+    width: 100%;
+}
+
+
 
 
 
@@ -322,6 +341,49 @@ section:nth-of-type(7){
 section:nth-of-type(7) p{
     max-width: 53em;
 }
+
+
+/* VOOR DE VOORBEELDEN  */
+main>div:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+main>div:nth-of-type(1) h3{
+    font-size: 1.5em;
+    margin-bottom: .3em;
+}
+
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+    gap: 1em;
+    max-width: 53em;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.image-item {
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-grid img{
+    max-width: 100%;
+}
+
+.image-grid h2 {
+    font-size: .9em;
+    line-height: 120%;
+    margin: 10px 0;
+    font-family: Georgia, 'Times New Roman', Times;
+    font-weight: 200;
+}
+
 
 
 
@@ -437,7 +499,7 @@ footer li a:hover::before {
     }
 
     /* inleidend stukje tekst  */
-    article{
+    article:nth-of-type(1){
         font-family: "lithos-pro", 'Arvo', sans-serif;
         font-weight: 700;
         font-style: normal;
@@ -527,6 +589,27 @@ footer li a:hover::before {
 
 
 
+
+    /* EXTRA STUKJE OVER ONTWERPSTER  */
+     article:nth-of-type(2){
+        display: flex;
+        justify-content: center;
+        margin: 7em 1em 3em 1em;
+        flex-direction: row;
+    }
+
+    article:nth-of-type(2) div:nth-of-type(2){
+        max-width: 27.5em;
+    }
+
+    article:nth-of-type(2) img{
+        max-width: 24em;
+        margin-right: 1.5em;
+    }
+
+
+
+
     /* zesde sectie met alfabet, allemaal los van elkaar. Mocht er 1 groter of kleiner moeten worden. */
     h5:nth-of-type(1){
         font-size: 3vw;
@@ -549,6 +632,41 @@ footer li a:hover::before {
      /* zevende sectie  */
      section:nth-of-type(7){
         margin: 0 1em 6em 1em;
+    }
+
+
+    /* VOORBEELDEN  */
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+        gap: 1em;
+        max-width: 53em;
+        margin: 0 auto;
+        padding: 1em;
+        margin-bottom: 8em;
+    }
+    
+    .image-item {
+        background: #fff;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .image-grid img{
+        max-width: 100%;
+    }
+    
+    .image-grid h2 {
+        font-size: 1.2em;
+        line-height: 120%;
+        margin: 10px 0;
+        font-family: Georgia, 'Times New Roman', Times;
+        font-weight: 200;
+    }
+
+    main>div:nth-of-type(1) h3{
+        font-size: 2em;
+        margin-bottom: .5em;
     }
 
 
