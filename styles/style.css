@@ -26,6 +26,7 @@ button, summary {
 	--color-background:#eee;
     --color-background-hero: rgba(0, 0, 0, 0.5); 
     --color-secondair: #a3937f;
+    --color-secondair-light: #c4b39f;
 }
 
 
@@ -39,7 +40,8 @@ body{
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times;
     font-size: 1em;
-    /* background-color: #E6D5BF; */
+    background-color: #e2cbb144;
+    /* Contrast Ratio 11.66:1 -> Is op alle vlakken goedgekeurd.  */
 }
 
 /* Gekozen voor Georgia als bodytekst, omdat het scherpe, goed gedefinieerde serifs heeft die goed contrasteren met de vormen van Lithos Pro. 
@@ -142,8 +144,13 @@ h3{
     font-size: 1.5em;
     margin: 0;
     padding: 0;
+
+    transition: text-shadow 0.3s ease-in-out;
 }
 
+  h3:hover {
+    text-shadow: 2px 2px 0px var(--color-secondair-light);
+}
 
 
 /* eerste sectie  */
