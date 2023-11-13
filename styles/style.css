@@ -25,6 +25,7 @@ button, summary {
     --color-background-dark: #151515;
 	--color-background:#eee;
     --color-background-hero: rgba(0, 0, 0, 0.5); 
+    --color-secondair: #a3937f;
 }
 
 
@@ -77,7 +78,7 @@ header::before {
 
 h1{
     z-index: 1;
-    font-size: 12vw;
+    font-size: 7.5vw;
     margin: 1em;
     font-family: "lithos-pro", 'Arvo', sans-serif;
     font-weight: 700;
@@ -85,6 +86,13 @@ h1{
     color: var(--color-text-light);
 }
 
+.typewriter{
+    overflow: hidden;
+    border-right: .1em solid var(--color-secondair); 
+    white-space: nowrap; 
+    margin: 0 auto; 
+  }
+  
 
 
 
@@ -344,7 +352,8 @@ section:nth-of-type(7) p{
 
 
 /* VOOR DE VOORBEELDEN  */
-main>div:nth-of-type(1) {
+main>div:nth-of-type(1),
+main>div:nth-of-type(2) {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -354,8 +363,6 @@ main>div:nth-of-type(1) h3{
     font-size: 1.5em;
     margin-bottom: .3em;
 }
-
-
 
 .image-grid {
     display: grid;
@@ -387,14 +394,14 @@ main>div:nth-of-type(1) h3{
 
 
 
-/* achtste sectie  */
-section:nth-of-type(8){
+/* NEGENDE sectie  */
+section:nth-of-type(9){
     display: flex;
     flex-direction: column;
     margin: 4em 1em 7em 1em;
 }
 
-section:nth-of-type(8) div img{
+section:nth-of-type(9) div img{
     width: 60%;
 }
 
@@ -628,10 +635,28 @@ footer li a:hover::before {
     }
 
 
-
-     /* zevende sectie  */
+    /* zevende sectie  */
      section:nth-of-type(7){
         margin: 0 1em 6em 1em;
+    }
+
+
+    /* Grote T in de achtste sectie  */
+    section:nth-of-type(8) div h2{
+        font-size: min(30vw, 8em);
+        margin-top: .3em;
+    }
+
+    /* achtste sectie  */
+    section:nth-of-type(8){
+        display: flex;
+        justify-content: center;
+        margin: 1em 1em 6em 1em;
+        flex-direction: row;
+    }
+
+    section:nth-of-type(8) div:nth-of-type(2){
+        margin-left: 2em;
     }
 
 
@@ -671,19 +696,19 @@ footer li a:hover::before {
 
 
 
-    /* achtste sectie  */
-    section:nth-of-type(8){
+    /* negende sectie  */
+    section:nth-of-type(9){
         display: flex;
         justify-content: center;
         flex-direction: row;
     }
 
-    section:nth-of-type(8) div:nth-of-type(1){
+    section:nth-of-type(9) div:nth-of-type(1){
         max-width: 31em;
         margin-right: 1em;
     }
 
-    section:nth-of-type(8) div img{
+    section:nth-of-type(9) div img{
         width: 35vw;
         max-width: 20em;
         margin-left: 1em;
